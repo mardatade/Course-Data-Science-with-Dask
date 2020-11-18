@@ -1,7 +1,10 @@
 import dask.array
 
-def define_pi_workload(size_in_terabytes, chunk_size_in_megabytes):
+def define_pi_workload(size_in_terabytes=0.25, chunk_size_in_megabytes=500):
     """Calculate pi using a Monte Carlo method."""
+    
+    print("workload in giga bytes:", size_in_terabytes*1e12/1e9)
+    print(f"{(size_in_terabytes*1e12)/(chunk_size_in_megabytes*1e6)} chunks to process")
 
     total_array_size = (int(size_in_terabytes * 1e12 / 8 / 2), 2)
     number_of_tasks = (size_in_terabytes * 1e12) / (chunk_size_in_megabytes * 1e6)
