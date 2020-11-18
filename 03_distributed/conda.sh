@@ -1,6 +1,6 @@
 #!/bin/bash
 
-conda_dirname=/home/khoeflich/Course-Data-Science-with-Dask/04_distributed
+conda_dirname=/home/khoeflich/Course-Data-Science-with-Dask/03_distributed
 export conda_base_path=${conda_dirname}/miniconda3
 
 if [ "${1}" == "install" ]; then
