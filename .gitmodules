@@ -1,3 +1,6 @@
 [submodule "dask-tutorial"]
 	path = dask-tutorial
 	url = https://github.com/dask/dask-tutorial.git
+[submodule "dask-examples"]
+	path = dask-examples
+	url = https://github.com/dask/dask-examples.git
